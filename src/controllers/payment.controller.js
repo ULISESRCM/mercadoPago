@@ -1,10 +1,10 @@
 import mercadopago from 'mercadopago'
-import {HOST} from '../config.js'
+import {HOST, MERCADOPAGO_API_KEY} from '../config.js'
 
 export const createOrder = async (req,res)=>{
     
     mercadopago.configure({
-        access_token:"",
+        access_token:MERCADOPAGO_API_KEY,
 
     })
     
